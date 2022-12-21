@@ -4,13 +4,13 @@ DOSKEY newTs= cd /d D:\tut\ts ^&^& mkdir $1 ^&^& cd $1 ^&^& mkdir src ^&^& mkdir
 DOSKEY startTs=cd /d D:\tut\ts\$1 ^&^& npm start
 DOSKEY watchTs=cd /d D:\tut\ts\$1 ^&^& tsc -w
 
-DOSKEY newNode= cd /d D:\tut\node ^&^& mkdir $1 ^&^& cd $1 ^&^& npm init ^&^& npm install nodemon --save-dev ^&^& type nul > app.js ^&^& cd .. ^&^& code $1
+DOSKEY newNode= cd /d D:\tut\node ^&^& mkdir $1 ^&^& cd $1 ^&^& npm init ^&^& npm install --save-dev nodemon ^&^& type nul > app.js ^&^& cd .. ^&^& code $1
 DOSKEY startNode = cd /d D:\tut\node\$1 ^&^& npm start
 
-DOSKEY newMERN= cd /d D:\tut\node ^&^& mkdir $1 ^&^& cd $1 ^&^& npm init ^&^& npm install nodemon --save-dev ^&^& npm install --save express ^&^& npm install --save body-parser ^&^& type nul > app.js ^&^& cd .. ^&^& code $1
+DOSKEY newMERN= cd /d D:\tut\node ^&^& mkdir $1 ^&^& cd $1 ^&^& npm init ^&^& npm install --save-dev nodemon ^&^& npm install --save express ^&^& npm install --save body-parser ^&^& type nul > app.js ^&^& cd .. ^&^& code $1
 DOSKEY startMERN = cd /d D:\tut\node\$1 ^&^& npm start
 
-DOSKEY newTMERN=cd /d D:\backUp\$1\BackEnd ^&^& mkdir src ^&^& mkdir dist ^&^& cd src ^&^& type nul > app.ts ^&^& cd .. ^&^& npm init ^&^& tsc --init ^&^& npm install nodemon --save-dev ^&^& npm install --save express ^&^& npm install --save body-parser ^&^& cd .. ^&^& code BackEnd
+DOSKEY newTMERN=cd /d D:\backUp\$1\BackEnd ^&^& mkdir src ^&^& mkdir dist ^&^& cd src ^&^& type nul > app.ts ^&^& cd .. ^&^& npm init ^&^& tsc --init ^&^& npm install --save-dev nodemon ^&^& npm install --save-dev @types/node ^&^& npm install --save-dev @types/express ^&^& npm install --save express ^&^& npm install --save body-parser ^&^& cd .. ^&^& code BackEnd
 DOSKEY startTMERN= cd /d D:\backUp\$1\BackEnd ^&^& npm start
  
 DOSKEY goReact=cd /d D:\dev\wd\web\react
@@ -33,6 +33,7 @@ DOSKEY updateGit= robocopy D:\dev\wd\. D:\dev\git /IS /S /XD node_modules /XD io
 DOSKEY uploadGit=cd /d D:\dev\git ^&^&  git add . ^&^& git commit -m $1 ^&^& git push -u origin main
 
 DOSKEY newP = cd /d D:\dev ^&^& mkdir $1 ^&^& cd $1 ^&^& mkdir BackEnd
+DOSKEY codeP= cd /d D:\backUp ^&^& code $1
 DOSKEY updateP= robocopy D:\backUp\$1 D:\dev\$1 /PURGE /IS /S /XD node_modules /XD ios /XD android XD D:\dev\$1\.git XD .git /XF .gitignore
 DOSKEY uploadP =cd /d D:\dev\$1 ^&^&  git add . ^&^& git commit -m $2 ^&^& git push -u origin $3
 
